@@ -1,0 +1,175 @@
+h1{
+    color: rebeccapurple;
+}
+
+
+.adder{
+    display: flex;
+} 
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    background-color: #1e272e;
+    text-align: center;
+    color: white;
+    line-height: 2em;
+    font-size: 1.4rem;
+    margin-top: auto;
+}
+
+footer p{
+margin-bottom: 0;
+}
+
+button{
+    border-radius: 23px;
+    padding: 5px 10px;
+}
+
+.head h1{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main_header_left{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_right{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+/* asdfghjkl */
+
+.temp_form{
+    width: 60%;
+    display: block;
+    position: relative;
+    margin: 7rem auto 4.5rem;
+}
+
+.temp_form input[type = text]{
+    width: 100%;
+    padding: 1.5rem 3.5rem 1rem 1rem;
+    background-color: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+
+.temp_form input[type = submit] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #009ad8;
+    padding: 0 1.5rem;
+    border-radius: 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+
+
+.tempInformation{
+    width: 25rem;
+    margin: auto;
+    min-height: 15rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.top_layer{
+    width: 100%;
+    height: 5%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.top_layer p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.2rem 0;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+.data_hide{
+    transition: all 0.3s linear;
+}
+
+sup{
+    font-size: 4rem;
+    margin-top: -0.5rem;
+}
+
+.fa{
+    color: #009ad8;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.data_hide{
+    visibility: hidden;
+}

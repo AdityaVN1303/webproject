@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main-content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter your City Name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Tuesday</p>
+                        <p id="today_date">X</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Get Output :--></p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span>0</span><sup>O</sup>C</p>
+                        <p id="temp_status"><i class="fa fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+             
+            </div>
+        </div>
+        
+    </div>
+    {{>footer}}
+
+
+<script src="js/main.js">
+</script>
+<script>
+    let day = document.getElementById('day')
+    let dates = document.getElementById('today_date')
+    const getCurrentDay = ()=>{
+        let weekday = new Array(7);
+        weekday[0] = "Sunday"
+        weekday[1] = "Monday"
+        weekday[2] = "Tuesday"
+        weekday[3] = "Wednesday"
+        weekday[4] = "Thursday"
+        weekday[5] = "Friday"
+        weekday[6] = "Saturday"
+
+        let currentTime = new Date();
+        day.innerText = weekday[currentTime.getDay()]
+        
+    }
+    getCurrentDay()
+
+    const date = new Date();
+
+let days = date.getDate();
+let month = date.getMonth() + 1;
+
+dates.innerText = `${days}-${month}`;
+</script>
+</body>
+</html>
